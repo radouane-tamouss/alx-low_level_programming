@@ -1,17 +1,18 @@
 #include <stdio.h>
+
 /**
- * main - putchar a character
- * it executes, and pr...
+ * main - prints the alphabet in loercase, and then in uppercase,
+ * folloed by a new line
  * Return: Always 0 (Sucess)
  */
 int main(void)
 {
-	 char i='a';
-	 char j='A';
-	 for(i='a';i<='z';i++)
-		putchar(i); 
-	 for(j='A';j<='Z';j++)
-		 putchar(j);
+	 int ch;
+
+	 for (ch = 'a'; ch <= 'z'; ch++)
+		 putchar(ch);
+	 for (ch = 'A'; ch <= 'Z'; ch++)
+		 putchar(ch);
 	 putchar('\n');
 	 return (0);
 }
